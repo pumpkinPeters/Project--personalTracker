@@ -4,22 +4,147 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 2</title>
+    <title>Project 2 -- Personal Tracker</title>
     <link rel="stylesheet" href="track.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="menu-bar">
       <ul>
-        <li class="active"><a href="#">Task</a></li>
-        <li class="on"><a href="#">Daily</a></li>
+        <li class="active"><a href="#">Overview</a></li>
+        <li><a href="#">Task</a></li>
+        <li><a href="#">Daily</a></li>
         <li><a href="#">Schedule</a></li>
         <li><a href="#">Goals</a></li>
-        <li><a href="#">Progress</a></li>
-        <li><a href="#">Definitions</a></li>
-        <li><a href="#">Shortcuts</a></li>
+        <li><a href="#">Udemy</a></li>
         <li><a href="#">Projects</a></li>
+        <li><a href="#">Definitions</a></li>
+        <li><a href="#">Health</a></li>
+        <li><a href="#">Games</a></li>
       </ul>
     </div>
+    <main>
+      <section class="task-page">
+        <div class="frame">
+          <div class="title">
+            <input type="text" placeholder="Enter your search item here" />
+            <img class="search-icon" src="/icons/search-icon.png" />
+            <img class="profile-picture" src="/icons/profilePhoto.png" />
+          </div>
+          <div class="sub-frame">
+            <div class="left-container">
+              <div class="sub-layer1">
+                <p>Projects</p>
+                <button class="btn-plus-icon">+</button>
+              </div>
+              <div class="sub-layer2">
+                <div class="AllEl"><p>All</p></div>
+                <div class="teamEl"><p>Team</p></div>
+                <div class="PersonalEl active"><p>Personal</p></div>
+              </div>
+              <div class="sub-layer3">
+                <div class="sub-container personal">
+                  <img src="/icons/jsLogo.png" />
+                  <div>
+                    <p><span>Project Name:</span> Personal Tracker</p>
+                    <p><span>Date Modified:</span> 29, August, 2021</p>
+                    <p><span>Deadline:</span> In 2 days...</p>
+                  </div>
+                </div>
+                <div class="sub-container team">
+                  <img src="/icons/htmlLogo.png" />
+                  <div>
+                    <p><span>Project Name:</span> Personal Tracker</p>
+                    <p><span>Date Modified:</span> 29, August, 2021</p>
+                    <p><span>Deadline:</span> In 2 days...</p>
+                  </div>
+                </div>
+
+                <div class="sub-container team">
+                  <img src="/icons/cssLogo.png" />
+                  <div>
+                    <p><span>Project Name:</span> Personal Tracker</p>
+                    <p><span>Date Modified:</span> 29, August, 2021</p>
+                    <p><span>Deadline:</span> In 2 days...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="middle-container">
+              <div class="sub-layer1">
+                <p>Today</p>
+                <button class="btn-plus-icon">+</button>
+              </div>
+              <div class="sub-layer2">
+                <div class="get-date"><p>Friday, 26 August, 11:45pm</p></div>
+              </div>
+              <div class="sub-layer3">
+                <div class="sub-container">
+                  <img src="/icons/cssLogo.png" />
+                  <div>
+                    <p><span>Project Name:</span> Personal Tracker</p>
+                    <p><span>Date Modified:</span> 29, August, 2021</p>
+                    <p><span>Deadline:</span> In 2 days...</p>
+                  </div>
+                </div>
+                <div class="sub-container">
+                  <img src="/icons/htmlLogo.png" />
+                  <div>
+                    <p><span>Project Name:</span> Personal Tracker</p>
+                    <p><span>Date Modified:</span> 29, August, 2021</p>
+                    <p><span>Deadline:</span> In 2 days...</p>
+                  </div>
+                </div>
+                <div class="sub-container">
+                  <img src="/icons/jsLogo.png" />
+                  <div>
+                    <p><span>Project Name:</span> Personal Tracker</p>
+                    <p><span>Date Modified:</span> 29, August, 2021</p>
+                    <p><span>Deadline:</span> In 2 days...</p>
+                  </div>
+                </div>
+                <div class="sub-container">
+                  <img src="/icons/htmlLogo.png" />
+                  <div>
+                    <p><span>Project Name:</span> Personal Tracker</p>
+                    <p><span>Date Modified:</span> 29, August, 2021</p>
+                    <p><span>Deadline:</span> In 2 days...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right-container">
+              <div class="sub-title">
+                <p>
+                  Reminders <span><img src="/icons/notepad-icon.svg" /></span>
+                </p>
+              </div>
+              <ul>
+                <li>Get new towel for gym</li>
+                <li>Order USB-C cable from Amazon</li>
+                <li style="text-decoration: line-through">
+                  Renew gym membership and ask for the couple rates
+                </li>
+                <li>Book appointment for dentist</li>
+                <li>Find the right book for learning business</li>
+                <li style="text-decoration: line-through">
+                  Take dog out on Sunday while Jennie is away
+                </li>
+                <li>
+                  Get comfortable with small steps, once initiated it becomes
+                  managable
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="track.js"></script>
   </body>
 </html>
