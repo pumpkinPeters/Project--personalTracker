@@ -4,22 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 2</title>
+    <title>Project 2 -- Personal Tracker</title>
     <link rel="stylesheet" href="track.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="menu-bar">
       <ul>
-        <li class="active"><a href="#">Task</a></li>
-        <li class="on"><a href="#">Daily</a></li>
+        <li class="active"><a href="#">Overview</a></li>
+        <li><a href="#">Task</a></li>
+        <li><a href="#">Daily</a></li>
         <li><a href="#">Schedule</a></li>
         <li><a href="#">Goals</a></li>
-        <li><a href="#">Progress</a></li>
-        <li><a href="#">Definitions</a></li>
-        <li><a href="#">Shortcuts</a></li>
+        <li><a href="#">Udemy</a></li>
         <li><a href="#">Projects</a></li>
+        <li><a href="#">Definitions</a></li>
+        <li><a href="#">Health</a></li>
+        <li><a href="#">Games</a></li>
       </ul>
     </div>
+    <main>
+      <section class="task-page">
+        <div class="frame">
+          <div class="title">
+            <div><p>Let's plan our day together!</p></div>
+            <img class="profile-picture" src="/icons/profilePhoto.png" />
+          </div>
+          <div class="sub-frame">
+            <div class="left-container">
+              <div class="sub-layer1">
+                <p>Projects</p>
+                <button class="btn-plus-icon">+</button>
+              </div>
+              <div class="sub-layer2">
+                <div class="active"><p>All</p></div>
+                <div><p>Team</p></div>
+                <div><p>Personal</p></div>
+              </div>
+              <div class="sub-layer3">
+                <div class="sub-container">
+                  <img src="/icons/jsLogo.png" />
+                  <div>
+                    <p><span>Project Name:</span> Personal Tracker</p>
+                    <p><span>Date Modified:</span> 29, August, 2021</p>
+                    <p><span>Deadline:</span> In 2 days...</p>
+                  </div>
+                </div>
+                <div class="sub-container">
+                  <img src="/icons/htmlLogo.png" />
+                  <div>
+                    <p><span>Project Name:</span> Personal Tracker</p>
+                    <p><span>Date Modified:</span> 29, August, 2021</p>
+                    <p><span>Deadline:</span> In 2 days...</p>
+                  </div>
+                </div>
+
+                <div class="sub-container">
+                  <img src="/icons/cssLogo.png" />
+                  <div>
+                    <p><span>Project Name:</span> Personal Tracker</p>
+                    <p><span>Date Modified:</span> 29, August, 2021</p>
+                    <p><span>Deadline:</span> In 2 days...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="middle-container">
+              <p>Today</p>
+            </div>
+            <div class="right-container">
+              <p>Reminders</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="track.js"></script>
   </body>
 </html>
