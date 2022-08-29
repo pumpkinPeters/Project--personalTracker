@@ -15,8 +15,6 @@ body {
 
 .menu-bar {
   display: flex;
-  /* background-color: rgb(65, 65, 71); */
-  /* background-color: rgba(65, 65, 71, 0.9); */
   background-color: rgba(32, 32, 36, 0.9);
   justify-content: center;
 }
@@ -76,7 +74,7 @@ body {
 }
 .search-icon {
   height: 20px;
-  margin-left: -380px;
+  margin-left: -360px;
   opacity: 0.7;
 }
 
@@ -96,7 +94,6 @@ body {
 .title input::placeholder {
   font-family: "Roboto";
   font-size: 20px;
-  text-align: center;
   color: rgb(172, 171, 171);
 }
 
@@ -104,7 +101,7 @@ body {
   font-size: 40px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
-  margin-left: 50px;
+  margin-left: 40px;
 }
 .profile-picture {
   height: 50px;
@@ -166,7 +163,7 @@ body {
   background-color: rgba(255, 255, 255, 0.15);
   position: absolute;
   right: 50px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 .btn-plus-icon:hover {
   opacity: 0.7;
@@ -313,4 +310,7 @@ body {
 .right-container ul li:hover {
   opacity: 0.5;
   color: rgb(232, 199, 176);
+}
+.hidden {
+  display: none;
 }
