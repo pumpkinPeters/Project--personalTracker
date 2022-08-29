@@ -1,19 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 body {
   height: 3000px;
   background-image: url(unsplashBg.jpg);
-  background-size: contain, cover;
-
+  background-size: 100%;
   background-position: top;
-  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ===== Menu Bar ===== */
+
 .menu-bar {
   display: flex;
-  background-color: rgb(65, 65, 71);
+  background-color: rgba(32, 32, 36, 0.9);
   justify-content: center;
 }
 .menu-bar ul {
@@ -23,18 +25,294 @@ body {
 .menu-bar ul li {
   text-align: center;
   font-size: 17px;
-
   padding: 1.3rem 1.8rem;
   width: 5rem;
   color: white;
-  background-color: rgb(65, 65, 71);
+  /* background-color: rgb(65, 65, 71); */
+  background-color: transparent;
+  cursor: pointer;
 }
-..menu-bar ul li.active,
+.menu-bar ul li.active,
 .menu-bar ul li:hover {
-  background-color: gray;
+  /* background-color: rgb(95, 102, 113); */
+  background-color: rgb(72, 75, 80);
 }
 .menu-bar ul li a {
   text-decoration: none;
   color: white;
 }
+
+/* ====== Task Page ====== */
+
+/* Title & Profile Picture */
+
+.task-page {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  min-width: 1000px;
+}
+.frame {
+  background-color: rgba(37, 44, 48, 0.9);
+  /* background-color: rgba(54, 59, 61, 0.98); */
+  display: flex;
+  flex-wrap: wrap;
+  width: 1900px;
+  height: 1000px;
+  margin: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px rgba(2, 2, 2, 0.8);
+}
+.title {
+  display: flex;
+  flex: 100%;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+}
+.search-icon {
+  height: 20px;
+  margin-left: -360px;
+  opacity: 0.7;
+}
+
+.title input {
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-family: "Roboto";
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  margin-right: 320px;
+}
+.title input::placeholder {
+  font-family: "Roboto";
+  font-size: 20px;
+  color: rgb(172, 171, 171);
+}
+
+.task-page p {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 40px;
+}
+.profile-picture {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 150px;
+  position: absolute;
+  right: 50px;
+  opacity: 0.8;
+}
+
+/* Sub Frame */
+
+.sub-frame {
+  display: flex;
+  width: 100%;
+  height: 880px;
+  /* background-color: lightblue; */
+  border-radius: 0 0 30px 30px;
+}
+
+/* Left Container */
+
+.left-container {
+  width: 28%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  min-width: 490px;
+}
+.sub-layer1 {
+  flex: 100%;
+  /* background-color: red; */
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.sub-layer1 p {
+  height: min-content;
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 700;
+  opacity: 0.95;
+}
+.btn-plus-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 0;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  right: 50px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.btn-plus-icon:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.sub-layer2 {
+  flex: 100%;
+  height: 60px;
+  /* background-color: rgb(18, 30, 65); */
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.sub-layer2 div {
+  padding: 20px;
+  opacity: 0.7;
+}
+.sub-layer2 div:hover {
+  cursor: pointer;
+}
+.sub-layer2 .active {
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: red;
+}
+.sub-layer2 p {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+.sub-layer2 p:hover {
+  color: white;
+}
+
+.sub-layer3 {
+  flex: 100%;
+  height: 720px;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.sub-container {
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+  transition: all 0.2s;
+  transition-timing-function: linear;
+}
+.sub-container:hover {
+  padding: 5px 0;
+  margin-left: 15px;
+  margin-right: -15px;
+  cursor: pointer;
+}
+.sub-layer3 p {
+  padding: 0;
+}
+
+.sub-container img {
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.sub-container div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sub-container p {
+  flex: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 4px;
+  white-space: nowrap;
+}
+.sub-container span {
+  font-weight: 500;
+  color: rgb(213, 240, 249);
+}
+
+.middle-container {
+  /* background-color: lightgrey; */
+  width: 47%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin-left: -40px;
+}
+.get-date p {
+  margin-left: -20px;
+}
+.right-container {
+  background-color: rgba(105, 106, 95, 0.6);
+  width: 25%;
+  flex-wrap: wrap;
+  position: relative;
+  min-width: 400px;
+  margin-right: 50px;
+  margin-left: 10px;
+  border-radius: 50px;
+  height: 800px;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7);
+}
+
+.sub-title {
+  background-color: rgba(107, 109, 78, 0.5);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px 50px 0px 0px;
+  position: relative;
+}
+.sub-title span {
+  position: absolute;
+  right: 40px;
+  top: 12px;
+  opacity: 0.7;
+}
+.sub-title img {
+  height: 80px;
+}
+
+.sub-title p {
+  margin: 0;
+  margin-left: 135px;
+}
+.right-container ul {
+  margin-left: 50px;
+  margin-top: 30px;
+  color: white;
+}
+.right-container ul li {
+  line-height: 60px;
+  font-size: 20px;
+  transition-timing-function: linear;
+  transition: all 0.2s;
+}
+.right-container ul li:hover {
+  opacity: 0.5;
+  color: rgb(232, 199, 176);
+}
+.hidden {
+  display: none;
+}
+
 
