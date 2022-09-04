@@ -199,12 +199,17 @@ body {
   color: white;
 }
 
-.sub-layer3 {
+.sub-layer3,
+.sub-layer4 {
   flex: 100%;
   height: 720px;
   align-items: center;
   margin-left: 50px;
   margin-right: 50px;
+}
+.sub-layer3 p,
+.sub-layer4 p {
+  padding: 0;
 }
 .sub-container {
   height: 120px;
@@ -222,9 +227,6 @@ body {
   margin-left: 15px;
   margin-right: -15px;
   cursor: pointer;
-}
-.sub-layer3 p {
-  padding: 0;
 }
 
 .sub-container img {
